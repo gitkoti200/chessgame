@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <title>Chess - Manual Mode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-1.0.0.min.css">
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="lib/chessboardjs/js/chessboard-1.0.0.js"></script>
+    <script src="lib/js/chess.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Chess - Manual Mode</h1>
+        <div id="board" style="width: 400px"></div>
+        <div class="controls">
+            <button id="aiModeBtn">Switch to AI Mode</button>
+        </div>
+    </div>
+    <script>
+        // Initialize manual mode
+        $(document).ready(function() {
+            initManualMode();
+        });
+    </script>
+</body>
+</html>
